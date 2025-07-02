@@ -32,7 +32,6 @@ A sleek and modern web-based API testing tool built with **Vite + React + TypeSc
 
 ## Preview
 
-![App Preview](screenshot.png)
 ![Screenshot 2025-07-03 033133](https://github.com/user-attachments/assets/0a448e44-8bc9-4ca4-8bcc-3d88cdaf2c6d)
 
 
