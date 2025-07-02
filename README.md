@@ -1,69 +1,86 @@
-# React + TypeScript + Vite
+# 🔌 API Tester
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and modern web-based API testing tool built with **Vite + React + TypeScript + Tailwind CSS**. Test your REST APIs with support for GET, POST, PUT, DELETE methods, raw/coded JSON viewing, cards & table display, request history, and import/export functionality — all in one clean interface.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌐 Supports `GET`, `POST`, `PUT`, `DELETE` methods
+- 🧪 JSON request editor and pretty response viewer
+- 📊 Switch between `Raw JSON`, `Table`, or `Card` views
+- 📁 Import/Export API request history
+- ⏳ Loading indicators and error handling
+- 🖼️ Responsive UI with Tailwind CSS
+- 🧠 Built with TypeScript and React functional components
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Tech           | Use Case                          |
+|----------------|-----------------------------------|
+| React + TS     | Core frontend logic               |
+| Vite           | Lightning-fast dev environment    |
+| Tailwind CSS   | Modern, responsive UI styling     |
+| Axios          | API request handling              |
+| react-icons    | Clean icon components             |
+| react-json-pretty | Render formatted JSON          |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Preview
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![App Preview](screenshot.png)
+![Screenshot 2025-07-03 033133](https://github.com/user-attachments/assets/0a448e44-8bc9-4ca4-8bcc-3d88cdaf2c6d)
+
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Swayam098/api-tester.git
+cd api-tester
+
+
+2. Install dependencies
+npm install
+
+3. Start development server
+npm run dev
+
+
+🧪 Testing APIs
+Select a method (GET/POST/PUT/DELETE)
+
+Enter your API URL
+
+(Optional) Add headers or request body (for POST/PUT)
+
+Click Send Request
+
+View the response in raw, table, or card format
+
+
+📤 Export & Import
+💾 Export your saved API requests as .json
+
+📂 Re-import them anytime to resume testing
+
+
+📁 Project Structure
+src/
+├── components/
+│   ├── HeaderBar.tsx
+│   ├── Sidebar.tsx
+│   ├── RequestForm.tsx
+│   └── ResponseViewer.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
+
+
